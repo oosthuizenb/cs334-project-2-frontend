@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://cs334-project2-backend.herokuapp.com/"; //"http://localhost:5000/";
+const baseURL = "http://localhost:5000/";
 
 const axiosInstance = axios.create({
   baseURL: baseURL,

@@ -14,7 +14,7 @@ export const Graphs = () => {
 
   useEffect(() => {
     axios
-    .get('https://cs334-project2-backend.herokuapp.com/graphs/', {
+    .get('http://localhost:5000/graphs/', {
       // headers: {
       //   "x-access-token": localStorage.getItem("token"),
       // },
@@ -55,7 +55,7 @@ export const Graphs = () => {
 
     } else { return }
 
-    let apiLink = "https://cs334-project2-backend.herokuapp.com/graphs/";
+    let apiLink = "http://localhost:5000/graphs/";
 
     if (graphType !== 'social-network') {
       apiLink = apiLink + graphType;
